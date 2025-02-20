@@ -1,0 +1,74 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80vh;
+  background: linear-gradient(to right, #e4ecf3, #45cce1);
+  color: rgb(0, 0, 0);
+  padding: auto;
+}
+
+/* Heading */
+.home-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+} 
+
+.home-content h1:hover {
+  transform: scale(1.05);
+  color: #5635e7;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraph */
+.home-content p {
+  font-size: 1.5rem;
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 5px solid rgb(237, 227, 227);
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+/* Hover Effect on Profile Picture */
+.profile-pic:hover {
+  transform: scale(1.1) rotate(5deg); /* Slight zoom & rotation */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
+
+/* Typing Animation */
+.animation {
+  font-size: 2.5rem;
+  font-weight: bold;
+  overflow: hidden; /* Hides overflowing text */
+  white-space: nowrap; /* Prevents text from wrapping */
+  border-right: 3px solid rgb(0, 0, 0); /* Cursor effect */
+  width: 0;
+  animation: typing 3s steps(30, end) forwards, blink 0.8s step-end 4;
+}
+
+/* Typing Keyframes */
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+/* Blink Keyframes */
+@keyframes blink {
+  50% {
+      border-color: transparent;
+  }
+}

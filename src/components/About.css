@@ -1,0 +1,116 @@
+.about {
+  text-align: center;
+  padding: 80px 100px;
+  background: linear-gradient(to right, #e4ecf3, #45cce1);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Headings */
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about h2:hover {
+  transform: scale(1.05);
+  color: #5635e7;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraphs - More Interactive */
+.about p {
+  font-size: 1.2rem;
+  max-width: 80%;
+  margin: 10px auto;
+  line-height: 1.8;
+  position: relative;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2); /* Slight transparency for a modern effect */
+  border-radius: 10px;
+  backdrop-filter: blur(5px); /* Blurry effect for better readability */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.about p:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Highlight Keywords */
+.about p strong {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+/* Skill Set Styling */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  padding: 20px 0;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 120px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 3.5rem;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.skill:hover {
+  transform: scale(1.2);
+}
+
+.skill:hover .html {
+  color: #E44D26;
+}
+
+.skill:hover .css {
+  color: #264de4;
+}
+
+.skill:hover .js {
+  color: #F7DF1E;
+}
+
+.skill:hover .react {
+  color: #61DBFB;
+}
+
+.skill:hover .python {
+  color: #3776AB;
+}
+
+.skill:hover .sql {
+  color: #f29111;
+}
+
+.skill:hover .cpp {
+  color: #00599C;
+}
