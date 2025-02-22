@@ -140,3 +140,54 @@
 .skill:hover .cpp {
   color: #00599C;
 }
+
+
+@media (max-width: 480px) {
+  .about {
+    padding: 50px 20px; /* Adjust padding for smaller screens */
+    text-align: center;
+  }
+
+  .about h2 {
+    font-size: 2rem; /* Reduce heading size */
+    margin-bottom: 15px;
+  }
+
+  .about p {
+    font-size: 1rem;
+    max-width: 90%; /* Make text fit better */
+    padding: 8px;
+  }
+
+  /* Responsive Image Gallery */
+  .image-gallery {
+    flex-direction: column; /* Stack images */
+    align-items: center;
+    gap: 15px;
+  }
+
+  .gallery-image {
+    width: 90%; /* Make images fit smaller screens */
+    height: auto;
+    padding: 10px;
+  }
+
+  /* Responsive Skills Section */
+  .skills {
+    flex-direction: column; /* Stack skills vertically */
+    align-items: center;
+    gap: 15px;
+  }
+
+  .skill {
+    width: 100px;
+  }
+
+  .skill p {
+    font-size: 1rem; /* Reduce text size */
+  }
+
+  .icon {
+    font-size: 2.5rem; /* Reduce icon size */
+  }
+}
