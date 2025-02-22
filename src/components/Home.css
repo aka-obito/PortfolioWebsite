@@ -99,7 +99,6 @@
   }
 }
 
-
 @media (max-width: 480px) {
   .home {
     display: flex;
@@ -113,7 +112,7 @@
 
   .home-content h1 {
     font-size: 1.8rem;
-    margin-top: -130px;;
+    margin-top: -170px;;
   }
 
   .home-content p {
@@ -125,10 +124,11 @@
   .profile-pic {
     width: 120px;
     height: 120px;
-    margin-top: -30px; 
+    margin-top: -70px; 
   }
 
   .animation {
     font-size: 1.5rem;
   }
 }
+
