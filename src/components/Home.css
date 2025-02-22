@@ -75,30 +75,6 @@
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .home {
-    padding: 30px 15px;
-    min-height: 100vh;
-  }
-
-  .home-content h1 {
-    font-size: 2rem;
-  }
-
-  .home-content p {
-    font-size: 1.2rem;
-  }
-
-  .profile-pic {
-    width: 150px;
-    height: 150px;
-  }
-
-  .animation {
-    font-size: 1.8rem;
-  }
-}
-
 
 @media (max-width: 480px) {
   .home {
