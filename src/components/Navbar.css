@@ -42,6 +42,7 @@
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+    background-color: #e4ecf3;
   }
 
   .nav-links {
