@@ -86,3 +86,28 @@ iframe:hover {
   transform: scale(1.08);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 480px) {
+  .resume {
+    padding: 40px 20px; /* Adjusted padding for smaller screens */
+    min-height: 100vh; /* Ensures full-screen display */
+  }
+
+  .resume h2 {
+    font-size: 2rem; /* Reduce heading size */
+    margin-top: -30px; /* Adjust spacing */
+  }
+
+  /* Responsive Resume Preview */
+  iframe {
+    width: 90%; /* Make iframe fit smaller screens */
+    height: 400px; /* Reduce height */
+  }
+
+  /* Responsive Download Button */
+  .download-btn {
+    font-size: 1rem; /* Reduce text size */
+    padding: 12px 25px; /* Adjust padding */
+  }
+}
+
