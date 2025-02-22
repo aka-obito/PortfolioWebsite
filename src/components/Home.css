@@ -4,10 +4,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 80vh;
+  min-height: 80vh;
   background: linear-gradient(to right, #e4ecf3, #45cce1);
   color: rgb(0, 0, 0);
-  padding: auto;
+  padding: 20px;
 }
 
 /* Heading */
@@ -26,6 +26,7 @@
 /* Paragraph */
 .home-content p {
   font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
 /* Profile Picture Styling */
@@ -70,5 +71,49 @@
 @keyframes blink {
   50% {
       border-color: transparent;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .home {
+    padding: 30px 15px;
+    min-height: 100vh;
+  }
+
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1.2rem;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .animation {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .animation {
+    font-size: 1.5rem;
   }
 }
