@@ -23,13 +23,14 @@
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Paragraph */
-.home-content p {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+/* Typed Animation */
+.typed-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
 }
 
-/* Profile Picture Styling */
+/* Profile Picture */
 .profile-pic {
   width: 200px;
   height: 200px;
@@ -37,56 +38,24 @@
   margin-top: 20px;
   border: 5px solid rgb(237, 227, 227);
   object-fit: cover;
-  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 /* Hover Effect on Profile Picture */
 .profile-pic:hover {
-  transform: scale(1.1) rotate(5deg); /* Slight zoom & rotation */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds depth */
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Typing Animation */
-.animation {
-  font-size: 2.5rem;
-  font-weight: bold;
-  overflow: hidden; /* Hides overflowing text */
-  white-space: nowrap; /* Prevents text from wrapping */
-  border-right: 3px solid rgb(0, 0, 0); /* Cursor effect */
-  width: 0;
-  animation: typing 3s steps(30, end) forwards, blink 0.8s step-end 4;
-}
-
-/* Typing Keyframes */
-@keyframes typing {
-  from {
-      width: 0;
-  }
-  to {
-      width: 100%;
-  }
-}
-
-/* Blink Keyframes */
-@keyframes blink {
-  50% {
-      border-color: transparent;
-  }
-}
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .home {
-    padding: 30px 15px;
-    min-height: 100vh;
-  }
-
   .home-content h1 {
     font-size: 2rem;
   }
 
-  .home-content p {
-    font-size: 1.2rem;
+  .typed-text {
+    font-size: 1.5rem;
   }
 
   .profile-pic {
@@ -94,41 +63,23 @@
     height: 150px;
   }
 
-  .animation {
-    font-size: 1.8rem;
-  }
 }
 
 @media (max-width: 480px) {
   .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center;
-    min-height: 100vh; /* Ensures full viewport height */
     padding: 20px;
   }
 
   .home-content h1 {
     font-size: 1.8rem;
-    margin-top: -170px;;
   }
 
-  .home-content p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    margin-top: 10px;
+  .typed-text {
+    font-size: 1.3rem;
   }
 
   .profile-pic {
     width: 120px;
     height: 120px;
-    margin-top: -70px; 
-  }
-
-  .animation {
-    font-size: 1.5rem;
   }
 }
-
