@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import logo from "../assets/logo.png"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="navbar">
-      <h2 className="logo">My Portfolio</h2>
-      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-        ☰
+      <Link to="/" className="logo">
+        <img src={logo} alt="Logo" />
+      </Link>
+      <div className={`hamburger ${menuOpen ? "open" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
         <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
