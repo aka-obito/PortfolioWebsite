@@ -1,0 +1,139 @@
+/* Contact Section */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 40px;
+    background: transparent; 
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  /* Contact Details */
+  .contact-details {
+    background: linear-gradient(to right, #eff1f3, #358e9c);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    margin-left: -30px;
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Contact Boxes */
+  .contact-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.2rem;
+    margin: 12px 0;
+    padding: 12px 18px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .contact-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Icons */
+  .contact-box .icon {
+    font-size: 1.7rem;
+    color: #007bff;
+  }
+  
+/* Social Media Icons */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    font-size: 2rem;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Hover Effects for Each Social Media */
+  .social-icon.linkedin:hover {
+    color: #0077b5; /* LinkedIn Blue */
+    transform: scale(1.2);
+  }
+  
+  .social-icon.instagram:hover {
+    color: #e4405f; /* Instagram Red-Pink */
+    transform: scale(1.2);
+  }
+  
+  .social-icon.whatsapp:hover {
+    color: #25d366; /* WhatsApp Green */
+    transform: scale(1.2);
+  }
+  
+  
+  /* Map Container */
+  .map-container {
+    width: 90%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+  }
+  
+  /* Leaflet Map Styling */
+  .leaflet-container {
+    height: 450px !important;
+    width: 100% !important;
+    border-radius: 15px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .contact {
+      padding: 30px 15px;
+    }
+  
+    .contact-details {
+      width: 95%;
+    }
+  
+    .map-container {
+      width: 95%;
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact {
+      padding: 25px 10px;
+    }
+  
+    .contact-box {
+      font-size: 1rem;
+      padding: 10px 15px;
+    }
+  
+    .social-icon {
+      font-size: 1.8rem;
+    }
+  
+    .map-container {
+      width: 100%;
+      height: 350px;
+    }
+  }
+  
