@@ -1,3 +1,6 @@
+.body {
+  background: linear-gradient(to right, #eff1f3, #358e9c);
+}
 /* Contact Section */
 .contact {
     display: flex;
