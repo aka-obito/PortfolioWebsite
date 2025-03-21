@@ -41,7 +41,7 @@ const Contact = () => {
           </div>
           <div className="contact-box">
             <SiGmail className="icon gmail-icon" />
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dhawalturkar@gmail.com" target="_blank" rel="noopener noreferrer">dhawalturkar@gmail.com</a>
+            <a href="https://gmail.google.com/mail/?view=cm&fs=1&to=dhawalturkar@gmail.com" target="_blank" rel="noopener noreferrer">dhawalturkar@gmail.com</a>
         </div>
 
           {/* Social Media Links */}
