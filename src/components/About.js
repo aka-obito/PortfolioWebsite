@@ -3,11 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
   faHtml5, faCss3Alt, faJs, faReact, faPython 
 } from "@fortawesome/free-brands-svg-icons"; // Import relevant icons
+import { faBrain, faChartLine } from "@fortawesome/free-solid-svg-icons";
 import { faDatabase, faCode } from "@fortawesome/free-solid-svg-icons";
 import p1 from "../assets/p1.png";
 import p2 from "../assets/p2.png"
-import p3 from "../assets/p3.png"
-
+import p3 from "../assets/p3.jpg"
+import p4 from "../assets/p4.jpg"
+import p5 from "../assets/p5.jpg"
+import p6 from "../assets/p6.jpg"
 import "./About.css";
 
 const About = () => {
@@ -35,6 +38,10 @@ const About = () => {
         <img src={p1} alt="Project Screenshot 1" className="gallery-image" />
         <img src={p2} alt="Project Screenshot 2" className="gallery-image" />
         <img src={p3} alt="Project Screenshot 3" className="gallery-image" />
+        <img src={p4} alt="Project Screenshot 4" className="gallery-image" />
+        <img src={p5} alt="Project Screenshot 4" className="gallery-image" />
+        <img src={p6} alt="Project Screenshot 4" className="gallery-image" />
+        
       </div>
 
       <h2>Skill Set</h2>
@@ -67,7 +74,15 @@ const About = () => {
           <FontAwesomeIcon icon={faCode} className="icon cpp" />
           <p>C++</p>
         </div>
-      </div>
+          <div className="skill">
+            <FontAwesomeIcon icon={faBrain} className="icon ai" />
+            <p>AI</p>
+          </div>
+          <div className="skill">
+            <FontAwesomeIcon icon={faChartLine} className="icon ml" />
+            <p>ML</p>
+          </div>
+        </div>
 
       <h2>Achievement</h2>
       <p>
