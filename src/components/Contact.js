@@ -47,10 +47,10 @@ const Contact = () => {
 
         {/* Social Media Links */}
         <div className="social-links">
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/dhawal-turkar-7bb8b325b/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="social-icon linkedin" />
           </a>
-          <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/dhawal__turkar/" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="social-icon instagram" />
           </a>
           <a href="https://wa.me/919325866943" target="_blank" rel="noopener noreferrer">
