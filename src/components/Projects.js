@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./Projects.css";
 
 const projects = [
@@ -18,22 +19,35 @@ const Projects = () => {
   };
 
   return (
-    <section className="projects">
+    <motion.section 
+      className="projects"
+      initial={{ opacity: 0, y: 20 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       <h2>Projects</h2>
-      <div className="project-list">
+      <motion.div 
+        className="project-list"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.3 }}
+      >
         {projects.map((project, index) => (
-          <div 
-            key={index} 
-            className="project-card" 
+          <motion.div
+            key={index}
+            className="project-card"
             onClick={() => handleProjectClick(project.githubLink)}
             style={{ cursor: "pointer" }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-          </div>
+          </motion.div>
         ))}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 
