@@ -10,12 +10,30 @@ import p3 from "../assets/p3.jpg";
 import p4 from "../assets/p4.jpg";
 import p5 from "../assets/p5.jpg";
 import p6 from "../assets/p6.jpg";
+
 import cert1 from "../assets/cert1.jpg";
 import cert2 from "../assets/cert2.jpg";
 import cert3 from "../assets/cert3.jpg";
 import cert4 from "../assets/cert4.jpg";
 import cert5 from "../assets/cert5.jpg";
 import cert6 from "../assets/cert6.jpg";
+
+import c1 from "../assets/c1.png";
+import c2 from "../assets/c2.png";
+import c3 from "../assets/c3.png";
+import c4 from "../assets/c4.png";
+import c5 from "../assets/c5.png";
+import c6 from "../assets/c6.png";
+import c7 from "../assets/c7.png";
+
+import pdf1 from "../assets/pdf1.pdf";
+import pdf2 from "../assets/pdf2.pdf";
+import pdf3 from "../assets/pdf3.pdf";
+import pdf4 from "../assets/pdf4.pdf";
+import pdf5 from "../assets/pdf5.pdf";
+import pdf6 from "../assets/pdf6.pdf";
+import pdf7 from "../assets/pdf7.pdf";
+
 import "./About.css";
 
 const About = () => {
@@ -36,7 +54,7 @@ const About = () => {
 
     return () => window.removeEventListener("scroll", revealSections);
   }, []);
-
+  
   return (
     <div className="about">
       <section className="section">
@@ -76,6 +94,35 @@ const About = () => {
           ))}
         </div>
       </section>
+
+      <section className="section">
+        <h2>Certifications</h2>
+        <div class="badge-scroll-container">
+            <div class="badge-container">
+              <div className="badge-container">
+                {[
+                  { badge: c1, pdf: pdf1 },
+                  { badge: c2, pdf: pdf2 },
+                  { badge: c5, pdf: pdf5 },
+                  { badge: c3, pdf: pdf3 },
+                  { badge: c4, pdf: pdf4 },
+                  { badge: c6, pdf: pdf6 },
+                  { badge: c7, pdf: pdf7 },
+                ].map((item, index) => (
+                  <div className="badge-item" key={index}>
+                    <img
+                      src={item.badge}
+                      alt={`Badge ${index + 1}`}
+                      className="badge"
+                      onClick={() => window.open(item.pdf, "_blank")}
+                    />
+                  </div>
+                ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <section className="section">
         <h2>Experience</h2>
