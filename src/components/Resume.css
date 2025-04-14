@@ -4,7 +4,6 @@
   align-items: center;
   min-height: 130vh;
   padding: 0px 50px; /* Adjusted padding for spacing */
-  background: linear-gradient(to right, #e4ecf3, #45cce1);
   overflow-y: auto; /* Enables scrolling */
   scroll-behavior: smooth;
   text-align: center;
@@ -86,6 +85,7 @@ iframe:hover {
   transform: scale(1.08);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
 
 @media (max-width: 480px) {
   .resume {
