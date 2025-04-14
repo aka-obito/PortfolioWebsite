@@ -14,6 +14,7 @@ import cert1 from "../assets/cert1.jpg";
 import cert2 from "../assets/cert2.jpg";
 import cert3 from "../assets/cert3.jpg";
 import cert4 from "../assets/cert4.jpg";
+import cert5 from "../assets/cert5.jpg";
 import "./About.css";
 
 const About = () => {
@@ -39,45 +40,66 @@ const About = () => {
     <div className="about">
       <section className="section">
         <h2>Introduction</h2>
-        <p> 
-          I am a Computer Science student and AIML enthusiast with an open elective in AI & Machine Learning. 
-          I have worked on various projects in these domains and am proficient in C++ and Python languages. 
-          Additionally, I have knowledge of frontend web development, including frameworks like React.js, as well as HTML, CSS, and JavaScript.
+        <p>
+          I’m <strong>Dhawal Turkar</strong>, a passionate Computer Science student currently pursuing my <strong>B.Tech at MIT Academy of Engineering (MITAOE)</strong> 🎓. I secured admission through <strong>MHT-CET with a 96 percentile</strong>, and my college journey has been filled with learning, achievements, and memorable experiences.
+
+          With a strong interest in <strong>Artificial Intelligence & Machine Learning</strong> 🤖, I’ve taken AI & ML as my open elective and worked on multiple projects in this field. I’m proficient in <strong>Python</strong> and <strong>C++</strong>, along with frontend web development using <strong>React.js, HTML, CSS, and JavaScript</strong>.
+
+          Academically, I’ve maintained a good record with a <strong>current CGPA of 8.58</strong> and completed an <strong>internship at Hackveda Limited</strong> as a Python Developer, gaining practical exposure to backend development and AI.
+
+          I’ve also been active in extracurriculars—representing my department in <strong>volleyball</strong> and securing <strong>first place</strong> in a college tournament 🏆. Additionally, I participated in cultural fests like <strong>Nakshatra</strong> and performed on stage, embracing the creative side of college life.
+
+          As the <strong>Administrator of the Foreign Language Club</strong> at MITAOE, I led and participated in Indo-Japanese exchange programs like <strong>Konnichiwa Pune</strong> 🌏, where we earned exciting prizes and international exposure.
+
+          With a blend of academics, leadership, and extracurricular involvement, I aim to grow continuously and make a meaningful impact in everything I do.
         </p>
+
+      </section>
+
+      <section className="section recognition">
+        <h2>Achievements</h2>
+        <div className="recognition-list">
+          {[
+            { img: p1, text: "During the Third Year of my B.Tech journey at MIT Academy of Engineering, I experienced one of the most memorable highlights of my academic life. I proudly secured the 1st prize 🥇 in the Product to Project certificate competition, a prestigious event hosted by E-CELL on 15th January 2024. This competition was a perfect stage to transform raw ideas into meaningful, scalable projects—blending creativity with execution. Presenting my vision, overcoming challenges, and receiving validation from industry mentors was truly empowering. It wasn’t just a win; it was a breakthrough that ignited my passion for innovation and project-based learning." },
+            { img: p2, text: "This achievement holds a special place in my heart—not just as a trophy, but as a milestone in my learning journey. I still remember the excitement in the air, the buzz of brilliant ideas being pitched, and the proud moment when my name was called for the top honor. 🚀 The support from my mentors and peers made the experience even more fulfilling. Moments like these remind me why I chose this path and inspire me to keep pushing boundaries in product development and project management. It's more than a memory; it’s a spark that continues to drive my ambitions forward. 🌟" },
+            { img: p3, text: "In the final year of my B.Tech journey at MIT Academy of Engineering 🎓, I had the honor of participating in one of the most intellectually rewarding experiences—AVINYA 2025, the institute’s first-ever Undergraduate Students' Conference, held on National Science Day (February 28th) 📚. Our research paper, 'Breaking Down Communication Barriers: A Deep Learning Approach Using LSTM to Empower Communication for Specially Abled Individuals,' was selected among 52 finalists from 87 submissions 📝. Presenting this innovative project with my amazing teammates—Arya Khobragade and Manav Wadikar—was a proud and electrifying moment ⚡. The cherry on top? We made it to the top 5 finalists for the Best Paper Award! 🏆" },
+            { img: p4, text: "The entire experience still feels like a core memory ✨—not just as a competition, but a celebration of curiosity, teamwork, and innovation 💡. From gaining invaluable insights by industry experts like Dr. Avadhut Sardeshmukh (TCS) and Mr. Yogesh Dandawate (Excelize AI Pvt. Ltd.) 👨‍🏫 to being cheered on by inspiring mentors, everything about AVINYA 2025 felt magical 🎤. A huge shoutout to Dr. Sunita Barve Ma’am for organizing this visionary platform and to Mrs. Aarti Deshpande Ma’am for her unwavering support throughout the journey 🙏. This event didn’t just add a feather to our cap—it sparked a deeper passion for tech-driven social impact and left us all motivated to reach for more 🔬." },
+            { img: p5, text: "Honored to receive the 'Best Paper Presenter' award at the 2nd IEEE ICIICS-2024 🏆 for our research on 'Age-Adaptive Lung Cancer Prediction Using Ensemble Learning Methods' 📊. Our study tackled early detection challenges by creating age-specific ML models using SMOTE for data balancing and GridSearchCV for tuning, achieving up to 96.98% accuracy 🚀. This recognition at such a prestigious platform motivates us to keep pushing the boundaries of AI in healthcare 🧠💡. Grateful to Sharnbasva University and the IEEE Bangalore Section for this inspiring opportunity 🙏✨." },
+            { img: p6, text: "Showcased VQA model and gained jury mention in college expo." }
+          ].map((item, index) => (
+            <div key={index} className={`recognition-item ${index % 2 === 0 ? 'left' : 'right'}`}>
+              <img src={item.img} alt={`Project ${index + 1}`} className="gallery-image" />
+              <p>{item.text}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className="section">
         <h2>Experience</h2>
         <p>
-          I am Dhawal Turkar, a Python Developer passionate about Data Science, Machine Learning, and Web Development. 
-          I have experience in Python, Flask, React.js, OpenCV, and LSTM models.
+          I have successfully completed internships that significantly enhanced my technical skills.<br/><br/>
+
+          My first internship was a <strong>1-month program at CodSoft</strong>, where I worked on multiple Python-based projects. These included developing <strong>GUI-based applications</strong> such as calculators, a to-do list, and a quiz game, allowing me to strengthen my foundation in Python and user interface development.<br/><br/>
+
+          My second internship was a <strong>2-month summer internship at Hackveda Limited</strong> 🧠, where I worked on a project titled <strong>"Day Trade Light"</strong>. During this time, I applied various <strong>Machine Learning algorithms</strong> and performed <strong>data analysis</strong> tasks, such as analyzing the trade data of <strong>BOB Bank</strong> and visualizing insights using <strong>candlestick charts</strong>.
+
+          I also contributed to building an <strong>automated email system</strong> using <strong>Google Crawler</strong> and <strong>SMTP</strong>. Throughout the internship, I worked with several technologies, including <strong>Django</strong> and <strong>Flask</strong>, to deliver <strong>end-to-end web development solutions</strong>. Additionally, I helped create multiple data visualization charts using tools like <strong>SnakeViz</strong> 📊, enabling better performance profiling and analysis.
+
+          This internship provided hands-on experience in full-stack development and collaborative teamwork with a group of talented and supportive colleagues, making it a truly enriching and memorable part of my learning journey.
         </p>
+
       </section>
 
       <section className="section">
-        <h2>Recognition</h2>
-        <div className="image-gallery">
-          {[p1, p2, p3, p4, p5, p6].map((img, index) => (
-            <img key={index} src={img} alt={`Project ${index + 1}`} className="gallery-image" />
-          ))}
-        </div>
-      </section>
-
-      <section className="section">
-        <h2>Achievement</h2>
-        <p>
-          I have worked on various projects in AI & ML, including Flask applications, CNN-LSTM models, and real-time object detection.
-        </p>
-      </section>
-
-      <section className="section">
-        <h2>Certifications</h2>
+        <h2>Internships</h2>
         <div className="certifications">
-          {[cert1, cert2, cert3, cert4].map((cert, index) => (
+          {[cert1, cert2, cert3, cert4, cert5].map((cert, index) => (
             <img key={index} src={cert} alt={`Certificate ${index + 1}`} className="cert-image" />
           ))}
         </div>
       </section>
+
 
       <section className="section">
         <h2>Skill Set</h2>
