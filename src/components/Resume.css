@@ -1,113 +1,129 @@
 .resume {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 130vh;
-  padding: 0px 50px; /* Adjusted padding for spacing */
-  overflow-y: auto; /* Enables scrolling */
-  scroll-behavior: smooth;
-  text-align: center;
-  /* padding: 80px 100px; */
-  color: #000000;
-  justify-content: center;
-}
-
-/* Ensure iframe and content do not overflow */
-.resume-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  min-height: calc(100vh - 100px); /* Adjusted height dynamically */
-  overflow-y: auto;
-  padding-bottom: 50px; /* Ensures content does not cut off at the bottom */
-}
-
-/* Smooth scrolling effect */
-html, body {
-  scroll-behavior: smooth;
-}
-
-
-/* Heading Styling */
-.resume h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  margin-top: -60px;
-  font-weight: bold;
-  position: relative;
-  text-transform:none;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
   color: #333;
-  transition: transform 0.3s ease-in-out;
 }
 
-/* Hover Effect on h2 */
-.resume h2:hover {
-  transform: scale(1.05);
-  color: #ffcc00;
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+.resume-title {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2c3e50;
 }
 
-/* Resume Preview */
-iframe {
-  width: 60%;
-  height: 600px;
-  border: none;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
+.resume-content {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1rem;
 }
 
-/* Zoom-in Effect on Resume on Hover */
-iframe:hover {
-  transform: scale(1.02);
+.resume-content h3 {
+  color: #1abc9c;
+  margin-bottom: 0.2rem;
+  font-size: 1.6rem;
 }
 
-/* Download Button */
+.resume-content h4 {
+  color: #34495e;
+  margin-top: 1.5rem;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.resume-content a {
+  color: #2980b9;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.resume-content a:hover {
+  text-decoration: underline;
+}
+
+.resume-content ul {
+  margin: 0.5rem 0 1rem 1.2rem;
+  padding-left: 1rem;
+}
+
 .download-btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 14px 30px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  background: linear-gradient(45deg, #2c3e50, #1f78c1);
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #1abc9c;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
-/* Hover Effect on Button */
 .download-btn:hover {
-  background: linear-gradient(45deg, #ffcc00, #ff5733);
-  color: white;
-  transform: scale(1.08);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background-color: #a0b1ae;
 }
 
+.contact {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+/* ------------ Responsive Styling ------------ */
+
+@media (max-width: 768px) {
+  .resume-content {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .resume-title {
+    font-size: 2rem;
+  }
+
+  .resume-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .resume-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .download-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+}
 
 @media (max-width: 480px) {
   .resume {
-    padding: 40px 20px; /* Adjusted padding for smaller screens */
-    min-height: 100vh; /* Ensures full-screen display */
+    padding: 1rem;
   }
 
-  .resume h2 {
-    font-size: 2rem; /* Reduce heading size */
-    margin-top: -160px; /* Adjust spacing */
+  .resume-content {
+    padding: 1rem;
+    font-size: 0.9rem;
   }
 
-  /* Responsive Resume Preview */
-  iframe {
-    width: 90%; /* Make iframe fit smaller screens */
-    height: 400px; /* Reduce height */
+  .resume-title {
+    font-size: 1.8rem;
   }
 
-  /* Responsive Download Button */
+  .resume-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .resume-content h4 {
+    font-size: 1rem;
+  }
+
   .download-btn {
-    font-size: 1rem; /* Reduce text size */
-    padding: 12px 25px; /* Adjust padding */
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.6rem 0;
   }
 }
-
