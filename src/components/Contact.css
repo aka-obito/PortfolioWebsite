@@ -10,11 +10,12 @@
   margin: auto;
   box-sizing: border-box;
   overflow: hidden;
+  color: #333;
 }
 
 /* Contact Details Container */
 .contact-details {
-  background: linear-gradient(to right, #358e9c, #2b6777);
+  background: rgb(255,235,205,0.5);
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -34,7 +35,7 @@
 
 .contact-details p {
   font-size: 1.2rem;
-  color: white;
+  color:#333;
   margin-bottom: 20px;
   word-wrap: break-word;
 }
