@@ -15,6 +15,7 @@ import cert2 from "../assets/cert2.jpg";
 import cert3 from "../assets/cert3.jpg";
 import cert4 from "../assets/cert4.jpg";
 import cert5 from "../assets/cert5.jpg";
+import cert6 from "../assets/cert6.jpg";
 import "./About.css";
 
 const About = () => {
@@ -80,7 +81,7 @@ const About = () => {
         <h2>Experience</h2>
         <div className="section1">
           <p>
-            I have successfully completed internships that significantly enhanced my technical skills.<br/><br/>
+            I have successfully completed internships that significantly enhanced my technical skills.Although some of them are virtul internships by <strong>TechSaksham</strong> and <strong>Eduskills</strong>. In those internships i have made great commands on AIML and Android Development.<br/><br/>
 
             My first internship was a <strong>1-month program at CodSoft</strong>, where I worked on multiple Python-based projects. These included developing <strong>GUI-based applications</strong> such as calculators, a to-do list, and a quiz game, allowing me to strengthen my foundation in Python and user interface development.<br/><br/>
 
@@ -96,7 +97,7 @@ const About = () => {
       <section className="section">
         <h2>Internships</h2>
         <div className="certifications">
-          {[cert1, cert2, cert3, cert4, cert5].map((cert, index) => (
+          {[cert1, cert2, cert3, cert4, cert5, cert6].map((cert, index) => (
             <img key={index} src={cert} alt={`Certificate ${index + 1}`} className="cert-image" />
           ))}
         </div>
