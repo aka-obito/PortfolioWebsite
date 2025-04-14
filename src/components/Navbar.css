@@ -62,7 +62,7 @@
     right: -100%;
     width: 75%;
     height: 100vh;
-    background: rgba(69, 204, 225, 0.95);
+    background:blanchedalmond;
     backdrop-filter: blur(10px);
     flex-direction: column;
     align-items: center;
