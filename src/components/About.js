@@ -81,7 +81,7 @@ const About = () => {
         <h2>Experience</h2>
         <div className="section1">
           <p>
-            I have successfully completed internships that significantly enhanced my technical skills.Although some of them are virtul internships by <strong>TechSaksham</strong> and <strong>Eduskills</strong>. In those internships i have made great commands on AIML and Android Development.<br/><br/>
+            I have successfully completed several internships that have significantly enhanced my technical skills. Notably, I undertook virtual internships with <strong>TechSaksham</strong> and <strong>Eduskills</strong>, where I developed strong proficiency in <strong>Artificial Intelligence & Machine Learning (AI/ML)</strong> and Android Development.<br/><br/>
 
             My first internship was a <strong>1-month program at CodSoft</strong>, where I worked on multiple Python-based projects. These included developing <strong>GUI-based applications</strong> such as calculators, a to-do list, and a quiz game, allowing me to strengthen my foundation in Python and user interface development.<br/><br/>
 
