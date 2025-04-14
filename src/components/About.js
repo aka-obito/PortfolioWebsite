@@ -40,20 +40,21 @@ const About = () => {
     <div className="about">
       <section className="section">
         <h2>Introduction</h2>
-        <p>
-          I’m <strong>Dhawal Turkar</strong>, a passionate Computer Science student currently pursuing my <strong>B.Tech at MIT Academy of Engineering (MITAOE)</strong> 🎓. I secured admission through <strong>MHT-CET with a 96 percentile</strong>, and my college journey has been filled with learning, achievements, and memorable experiences.
+        <div className="section1">
+          <p>
+            I’m <strong>Dhawal Turkar</strong>, a passionate Computer Science student currently pursuing my <strong>B.Tech at MIT Academy of Engineering (MITAOE)</strong> 🎓. I secured admission through <strong>MHT-CET with a 96 percentile</strong>, and my college journey has been filled with learning, achievements, and memorable experiences.
 
-          With a strong interest in <strong>Artificial Intelligence & Machine Learning</strong> 🤖, I’ve taken AI & ML as my open elective and worked on multiple projects in this field. I’m proficient in <strong>Python</strong> and <strong>C++</strong>, along with frontend web development using <strong>React.js, HTML, CSS, and JavaScript</strong>.
+            With a strong interest in <strong>Artificial Intelligence & Machine Learning</strong> 🤖, I’ve taken AI & ML as my open elective and worked on multiple projects in this field. I’m proficient in <strong>Python</strong> and <strong>C++</strong>, along with frontend web development using <strong>React.js, HTML, CSS, and JavaScript</strong>.
 
-          Academically, I’ve maintained a good record with a <strong>current CGPA of 8.58</strong> and completed an <strong>internship at Hackveda Limited</strong> as a Python Developer, gaining practical exposure to backend development and AI.
+            Academically, I’ve maintained a good record with a <strong>current CGPA of 8.58</strong> and completed an <strong>internship at Hackveda Limited</strong> as a Python Developer, gaining practical exposure to backend development and AI.
 
-          I’ve also been active in extracurriculars—representing my department in <strong>volleyball</strong> and securing <strong>first place</strong> in a college tournament 🏆. Additionally, I participated in cultural fests like <strong>Nakshatra</strong> and performed on stage, embracing the creative side of college life.
+            I’ve also been active in extracurriculars—representing my department in <strong>volleyball</strong> and securing <strong>first place</strong> in a college tournament 🏆. Additionally, I participated in cultural fests like <strong>Nakshatra</strong> and performed on stage, embracing the creative side of college life.
 
-          As the <strong>Administrator of the Foreign Language Club</strong> at MITAOE, I led and participated in Indo-Japanese exchange programs like <strong>Konnichiwa Pune</strong> 🌏, where we earned exciting prizes and international exposure.
+            As the <strong>Administrator of the Foreign Language Club</strong> at MITAOE, I led and participated in Indo-Japanese exchange programs like <strong>Konnichiwa Pune</strong> 🌏, where we earned exciting prizes and international exposure.
 
-          With a blend of academics, leadership, and extracurricular involvement, I aim to grow continuously and make a meaningful impact in everything I do.
-        </p>
-
+            With a blend of academics, leadership, and extracurricular involvement, I aim to grow continuously and make a meaningful impact in everything I do.
+          </p>
+        </div>
       </section>
 
       <section className="section recognition">
@@ -77,18 +78,19 @@ const About = () => {
 
       <section className="section">
         <h2>Experience</h2>
-        <p>
-          I have successfully completed internships that significantly enhanced my technical skills.<br/><br/>
+        <div className="section1">
+          <p>
+            I have successfully completed internships that significantly enhanced my technical skills.<br/><br/>
 
-          My first internship was a <strong>1-month program at CodSoft</strong>, where I worked on multiple Python-based projects. These included developing <strong>GUI-based applications</strong> such as calculators, a to-do list, and a quiz game, allowing me to strengthen my foundation in Python and user interface development.<br/><br/>
+            My first internship was a <strong>1-month program at CodSoft</strong>, where I worked on multiple Python-based projects. These included developing <strong>GUI-based applications</strong> such as calculators, a to-do list, and a quiz game, allowing me to strengthen my foundation in Python and user interface development.<br/><br/>
 
-          My second internship was a <strong>2-month summer internship at Hackveda Limited</strong> 🧠, where I worked on a project titled <strong>"Day Trade Light"</strong>. During this time, I applied various <strong>Machine Learning algorithms</strong> and performed <strong>data analysis</strong> tasks, such as analyzing the trade data of <strong>BOB Bank</strong> and visualizing insights using <strong>candlestick charts</strong>.
+            My second internship was a <strong>2-month summer internship at Hackveda Limited</strong> 🧠, where I worked on a project titled <strong>"Day Trade Light"</strong>. During this time, I applied various <strong>Machine Learning algorithms</strong> and performed <strong>data analysis</strong> tasks, such as analyzing the trade data of <strong>BOB Bank</strong> and visualizing insights using <strong>candlestick charts</strong>.
 
-          I also contributed to building an <strong>automated email system</strong> using <strong>Google Crawler</strong> and <strong>SMTP</strong>. Throughout the internship, I worked with several technologies, including <strong>Django</strong> and <strong>Flask</strong>, to deliver <strong>end-to-end web development solutions</strong>. Additionally, I helped create multiple data visualization charts using tools like <strong>SnakeViz</strong> 📊, enabling better performance profiling and analysis.
+            I also contributed to building an <strong>automated email system</strong> using <strong>Google Crawler</strong> and <strong>SMTP</strong>. Throughout the internship, I worked with several technologies, including <strong>Django</strong> and <strong>Flask</strong>, to deliver <strong>end-to-end web development solutions</strong>. Additionally, I helped create multiple data visualization charts using tools like <strong>SnakeViz</strong> 📊, enabling better performance profiling and analysis.
 
-          This internship provided hands-on experience in full-stack development and collaborative teamwork with a group of talented and supportive colleagues, making it a truly enriching and memorable part of my learning journey.
-        </p>
-
+            This internship provided hands-on experience in full-stack development and collaborative teamwork with a group of talented and supportive colleagues, making it a truly enriching and memorable part of my learning journey.
+          </p>
+        </div>
       </section>
 
       <section className="section">
