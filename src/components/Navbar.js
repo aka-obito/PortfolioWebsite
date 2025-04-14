@@ -17,6 +17,7 @@ const Navbar = () => {
         <span></span>
       </div>
 
+      <div className="highlight">
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
         <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
@@ -24,6 +25,7 @@ const Navbar = () => {
         <li><Link to="/resume" onClick={() => setMenuOpen(false)}>Resume</Link></li>
         <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
       </ul>
+      </div>
     </nav>
   );
 };
