@@ -15,7 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 68vh;
+  min-height: 66vh;
   color: rgb(0, 0, 0);
   padding: 20px;
 }
@@ -24,30 +24,43 @@ body {
 .home-content h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
   transition: 0.3s ease-in-out;
-} 
+}
 
 .home-content h1:hover {
+  -webkit-text-stroke: 2px black;
+  color: white;
   transform: scale(1.05);
-  color: #5635e7;
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Typed Animation */
 .typed-text {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #333;
+  color: #000000;
+}
+
+/* Profile Container with animation wrapper */
+.profile-container {
+  position: relative;
+  width: 275px;
+  height: 275px;
+  margin-top: 30px;
 }
 
 /* Profile Picture */
 .profile-pic {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  margin-top: 20px;
   border: 5px solid rgb(237, 227, 227);
   object-fit: cover;
+  z-index: 2;
+  position: relative;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -57,6 +70,36 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Sparkle / Glow Effect */
+.sparkle {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 20%, transparent 70%);
+  animation: sparkle 2s infinite ease-in-out;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Sparkle Animation */
+@keyframes sparkle {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -68,11 +111,10 @@ body {
     font-size: 1.5rem;
   }
 
-  .profile-pic {
-    width: 150px;
-    height: 150px;
+  .profile-container {
+    width: 300px;
+    height: 300px;
   }
-
 }
 
 @media (max-width: 480px) {
@@ -88,8 +130,8 @@ body {
     font-size: 1.3rem;
   }
 
-  .profile-pic {
-    width: 120px;
-    height: 120px;
+  .profile-container {
+    width: 300px;
+    height: 300px;
   }
 }

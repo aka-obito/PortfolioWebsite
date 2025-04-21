@@ -27,15 +27,20 @@ const Home = () => {
         />
       </motion.div>
 
-      <motion.img
-        src={profilePic}
-        alt="Profile"
-        className="profile-pic"
+      <motion.div
+        className="profile-container"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         whileHover={{ scale: 1.1, rotate: 5 }}
-      />
+      >
+        <img
+          src={profilePic}
+          alt="Profile"
+          className="profile-pic"
+        />
+        <div className="sparkle"></div>
+      </motion.div>
     </section>
   );
 };

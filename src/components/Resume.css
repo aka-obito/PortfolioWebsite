@@ -4,6 +4,12 @@
   color: #333;
 }
 
+.resume h2{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
 .resume-title {
   font-size: 2.2rem;
   margin-bottom: 1.5rem;

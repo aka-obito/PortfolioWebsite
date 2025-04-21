@@ -69,21 +69,21 @@ const About = () => {
             
           <strong>✅ Current Education</strong>
             <ul>
-              Degree: B.Tech in Computer Science at <i>MIT Academy of Engineering (MITAOE)</i><br/>
-              Admission: Secured through <i>MHT-CET with 96 percentile</i><br/>
-              CGPA: 8.58
+              Degree: B.Tech in Computer Science at <i>MIT Academy of Engineering (MITAOE).</i><br/>
+              Admission: Secured through <i>MHT-CET with 96 percentile.</i><br/>
+              CGPA: 8.58.
             </ul>
             
           <strong>✅ Leadership & International Exposure</strong>
             <ul>
-              Administrator of the <i>Foreign Language Club</i> at MITAOE<br/>
-              Led and participated in Indo-Japanese exchange programs like <i>Konnichiwa Pune</i>
+              Administrator of the <i>Foreign Language Club</i> at MITAOE.<br/>
+              Led and participated in Indo-Japanese exchange programs like <i>Konnichiwa Pune.</i>
             </ul>
 
           <strong>✅ Career Objective:</strong>
             <ul>
-              Strive for continuous growth in both academic and personal development<br/>
-              Aim to make a meaningful impact through extracurricular involvement
+              Strive for continuous growth in both academic and personal development.<br/>
+              Aim to make a meaningful impact through extracurricular involvement.
             </ul>
         </p>
 
