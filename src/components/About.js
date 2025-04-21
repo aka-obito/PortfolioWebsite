@@ -61,38 +61,31 @@ const About = () => {
         <h2>Introduction</h2>
         <div className="section1">
         <p>
-          <ul>
-
-          <li><strong>Previous Education</strong>
-              <ul>
-                <li><strong>10th:</strong> Jankidevi Chouragade High School, Gondiya (91.80%).</li>
-                <li><strong>12th:</strong> Jankidevi Chouragade Jr. College of Science, Gondiya (86.92%).</li>
-              </ul>
-            </li>
-
-            <li><strong>Current Education</strong>
-              <ul>
-                <li><strong>Degree:</strong> B.Tech in Computer Science at <i>MIT Academy of Engineering (MITAOE)</i></li>
-                <li><strong>Admission:</strong> Secured through <i>MHT-CET with 96 percentile</i></li>
-                <li><strong>CGPA:</strong> 8.58</li>
-              </ul>
-            </li>
+          <strong>Previous Education</strong>
+            <ul>
+              <li><strong>10th:</strong> Jankidevi Chouragade High School, Gondiya (91.80%).</li>
+              <li><strong>12th:</strong> Jankidevi Chouragade Jr. College of Science, Gondiya (86.92%).</li>
+            </ul>
             
-            <li><strong>Leadership & International Exposure</strong>
-              <ul>
-                <li>Administrator of the <i>Foreign Language Club</i> at MITAOE</li>
-                <li>Led and participated in Indo-Japanese exchange programs like <i>Konnichiwa Pune</i></li>
-              </ul>
-            </li>
+          <strong>Current Education</strong>
+            <ul>
+              <li><strong>Degree:</strong> B.Tech in Computer Science at <i>MIT Academy of Engineering (MITAOE)</i></li>
+              <li><strong>Admission:</strong> Secured through <i>MHT-CET with 96 percentile</i></li>
+              <li><strong>CGPA:</strong> 8.58</li>
+            </ul>
+            
+          <strong>Leadership & International Exposure</strong>
+            <ul>
+              <li>Administrator of the <i>Foreign Language Club</i> at MITAOE</li>
+              <li>Led and participated in Indo-Japanese exchange programs like <i>Konnichiwa Pune</i></li>
+            </ul>
 
-            <li><strong>Career Objective:</strong>
-              <ul>
-                <li>Strive for continuous growth in both academic and personal development</li>
-                <li>Aim to make a meaningful impact through extracurricular involvement</li>
-              </ul>
-            </li>
+          <strong>Career Objective:</strong>
+            <ul>
+              <li>Strive for continuous growth in both academic and personal development</li>
+              <li>Aim to make a meaningful impact through extracurricular involvement</li>
+            </ul>
 
-          </ul>
         </p>
 
         </div>
@@ -181,26 +174,18 @@ const About = () => {
         <h2>Experience</h2>
         <div className="section1">
           <p>
-            <ul>
-              <li>
-                Completed virtual internships with <strong>TechSaksham</strong> and <strong>Eduskills</strong>, learning <i>AI/ML</i> and Android development.
-              </li>
-              <li>
-                Built Python GUI apps during a <strong>1-month internship at CodSoft</strong>, improving Python and UI skills.
-              </li>
-              <li>
-                Contributed to <i>"Day Trade Light"</i> project using <i>ML</i> during a <strong>2-month internship at Hackveda</strong> 🧠.
-              </li>
-              <li>
-                Developed candlestick charts and an automated email system using Google Crawler and SMTP.
-              </li>
-              <li>
-                Used <i>Django</i>, <i>Flask</i>, and <i>SnakeViz</i> 📊 for web development and performance analysis.
-              </li>
-              <li>
-                Gained full-stack experience and teamwork skills through practical project work.
-              </li>
-            </ul>
+            👉 <strong>Completed virtual internships with <i>TechSaksham</i> and <i>Eduskills</i>, learning <i>AI/ML</i> and Android development.<br/>
+
+            👉 Built Python GUI apps during a <i>1-month internship at CodSoft</i>, improving Python and UI skills.<br/>
+
+            👉 Contributed to <i>"Day Trade Light"</i> project using <i>ML</i> during a <strong>2-month internship at Hackveda</strong> 🧠.<br/>
+
+            👉 Developed candlestick charts and an automated email system using Google Crawler and SMTP.<br/>
+           
+            👉 Used <i>Django</i>, <i>Flask</i>, and <i>SnakeViz</i> 📊 for web development and performance analysis.<br/>
+            
+            👉 Gained full-stack experience and teamwork skills through practical project work.</strong><br/>
+              
           </p>
         </div>
       </section>
