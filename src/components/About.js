@@ -61,31 +61,30 @@ const About = () => {
         <h2>Introduction</h2>
         <div className="section1">
         <p>
-          <strong>Previous Education</strong>
+          <strong>✅ Previous Education</strong>
             <ul>
-              <li><strong>10th:</strong> Jankidevi Chouragade High School, Gondiya (91.80%).</li>
-              <li><strong>12th:</strong> Jankidevi Chouragade Jr. College of Science, Gondiya (86.92%).</li>
+              10th: Jankidevi Chouragade High School, Gondiya (91.80%).<br/>
+              12th: Jankidevi Chouragade Jr. College of Science, Gondiya (86.92%).
             </ul>
             
-          <strong>Current Education</strong>
+          <strong>✅ Current Education</strong>
             <ul>
-              <li><strong>Degree:</strong> B.Tech in Computer Science at <i>MIT Academy of Engineering (MITAOE)</i></li>
-              <li><strong>Admission:</strong> Secured through <i>MHT-CET with 96 percentile</i></li>
-              <li><strong>CGPA:</strong> 8.58</li>
+              Degree: B.Tech in Computer Science at <i>MIT Academy of Engineering (MITAOE)</i><br/>
+              Admission: Secured through <i>MHT-CET with 96 percentile</i><br/>
+              CGPA: 8.58
             </ul>
             
-          <strong>Leadership & International Exposure</strong>
+          <strong>✅ Leadership & International Exposure</strong>
             <ul>
-              <li>Administrator of the <i>Foreign Language Club</i> at MITAOE</li>
-              <li>Led and participated in Indo-Japanese exchange programs like <i>Konnichiwa Pune</i></li>
+              Administrator of the <i>Foreign Language Club</i> at MITAOE<br/>
+              Led and participated in Indo-Japanese exchange programs like <i>Konnichiwa Pune</i>
             </ul>
 
-          <strong>Career Objective:</strong>
+          <strong>✅ Career Objective:</strong>
             <ul>
-              <li>Strive for continuous growth in both academic and personal development</li>
-              <li>Aim to make a meaningful impact through extracurricular involvement</li>
+              Strive for continuous growth in both academic and personal development<br/>
+              Aim to make a meaningful impact through extracurricular involvement
             </ul>
-
         </p>
 
         </div>
