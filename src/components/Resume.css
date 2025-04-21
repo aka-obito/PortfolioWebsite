@@ -1,0 +1,129 @@
+.resume {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.resume-title {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.resume-content {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.resume-content h3 {
+  color: #1abc9c;
+  margin-bottom: 0.2rem;
+  font-size: 1.6rem;
+}
+
+.resume-content h4 {
+  color: #34495e;
+  margin-top: 1.5rem;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.resume-content a {
+  color: #2980b9;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.resume-content a:hover {
+  text-decoration: underline;
+}
+
+.resume-content ul {
+  margin: 0.5rem 0 1rem 1.2rem;
+  padding-left: 1rem;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #1abc9c;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #a0b1ae;
+}
+
+.contact {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+/* ------------ Responsive Styling ------------ */
+
+@media (max-width: 768px) {
+  .resume-content {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .resume-title {
+    font-size: 2rem;
+  }
+
+  .resume-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .resume-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .download-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume {
+    padding: 1rem;
+  }
+
+  .resume-content {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .resume-title {
+    font-size: 1.8rem;
+  }
+
+  .resume-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .resume-content h4 {
+    font-size: 1rem;
+  }
+
+  .download-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.6rem 0;
+  }
+}

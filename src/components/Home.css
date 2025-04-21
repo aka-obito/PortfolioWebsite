@@ -1,0 +1,95 @@
+/* General Reset */
+body {
+  /* background: linear-gradient(to right, #e4ecf3, #5e42c0); */
+  /* background: linear-gradient(to right, #e4ecf3, #45cce1); */
+  background: linear-gradient(to right, #e4ecf3, #b1a5e1);
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 68vh;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+
+/* Heading */
+.home-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+} 
+
+.home-content h1:hover {
+  transform: scale(1.05);
+  color: #5635e7;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Typed Animation */
+.typed-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 5px solid rgb(237, 227, 227);
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect on Profile Picture */
+.profile-pic:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .typed-text {
+    font-size: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 20px;
+  }
+
+  .home-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .typed-text {
+    font-size: 1.3rem;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+}
