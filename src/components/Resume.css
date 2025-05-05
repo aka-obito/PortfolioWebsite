@@ -1,13 +1,12 @@
-.resume {
-  padding: 2rem;
-  font-family: 'Segoe UI', sans-serif;
-  color: #333;
-}
-
 .resume h2{
   color: rgb(0, 0, 0);
   font-weight: bold;
   -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+.resume {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
 }
 
 .resume-title {

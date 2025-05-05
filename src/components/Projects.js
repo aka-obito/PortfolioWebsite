@@ -1,16 +1,71 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Projects.css";
+import pr1 from "../assets/pr1.jpg";
+import pr2 from "../assets/pr2.jpg";
+import pr3 from "../assets/pr3.jpg";
+import pr4 from "../assets/pr4.jpg";
+import pr5 from "../assets/pr5.jpg";
+import alarmVideo from "../assets/AlarmVideo.mp4";
+import pr7 from "../assets/pr7.png";
+import pr8 from "../assets/pr8.jpg";
+import pr9 from "../assets/pr9.png";
 
 const projects = [
-  { title: "VQA Model", description: "Visual QA Model using LSTM and Bert with Attention Layer.", githubLink: "https://github.com/aka-obito/VQAModel" },
-  { title: "Sign Language Using LSTM", description: "Deep Learning Model For Dynamic Sign Gestures.", githubLink: "https://github.com/aka-obito/SignLanguageMajorProject" },
-  { title: "Flask File Upload App", description: "A web app to upload and manage files efficiently.", githubLink: "https://github.com/yourusername/flask-file-upload" },
-  { title: "Object Detection Model", description: "Fine-tuned a pre-trained model for real-time detection.", githubLink: "https://github.com/yourusername/object-detection" },
-  { title: "Stock Price Predictor", description: "Machine learning model to predict stock trends.", githubLink: "https://github.com/yourusername/stock-price-predictor" },
-  { title: "E-commerce Website", description: "A full-stack e-commerce platform with payment integration.", githubLink: "https://github.com/yourusername/ecommerce-website" },
-  { title: "Portfolio Website", description: "A React.js personal portfolio with a dynamic project showcase.", githubLink: "https://github.com/yourusername/portfolio-website" },
-  { title: "Real-time Chat App", description: "A web-based chat application using WebSockets and Node.js.", githubLink: "https://github.com/yourusername/real-time-chat-app" }
+  { 
+    title: "Minor Project", 
+    description: "Sign Language Recognition Model Using CNN ", 
+    githubLink: "https://github.com/aka-obito/VQAModel",
+    img: pr1
+  },
+  { 
+    title: "Major Project", 
+    description: "Deep Learning LSTM Model For Dynamic Sign Gestures.", 
+    githubLink: "https://github.com/aka-obito/SignLanguageMajorProject",
+    img: pr2
+  },
+  { 
+    title: "Capstone Project", 
+    description: "KRUSHI MITRA: Crop Yield Prediction Using Machine Learning", 
+    githubLink: "https://github.com/yourusername/flask-file-upload",
+    img: pr3
+  },
+  { 
+    title: "EchoBeats Music", 
+    description: "Robust Music App for Music streaming And Chatting With Friends.", 
+    githubLink: "https://github.com/yourusername/object-detection",
+    img: pr4
+  },
+  { 
+    title: "VQA Model", 
+    description: "Deep Learning Approch for Visual Quetion Answering.", 
+    githubLink: "https://github.com/yourusername/stock-price-predictor",
+    img: pr5
+  },
+  {
+    title: "Anti-Theft Alarm Monitoring System",
+    description: "A full-stack e-commerce platform with payment integration.",
+    githubLink: "https://github.com/yourusername/ecommerce-website",
+    video: alarmVideo
+  },  
+  { 
+    title: "Portfolio Website", 
+    description: "A React.js personal portfolio with a dynamic project showcase.", 
+    githubLink: "https://github.com/yourusername/portfolio-website",
+    img: pr7
+  },
+  { 
+    title: "AI Proctoring System", 
+    description: "A web-based chat application using WebSockets and Node.js.", 
+    githubLink: "https://github.com/yourusername/real-time-chat-app",
+    img: pr8
+  },
+  { 
+    title: "Weather App", 
+    description: "A web-based chat application using WebSockets and Node.js.", 
+    githubLink: "https://github.com/yourusername/real-time-chat-app",
+    img: pr9
+  }
 ];
 
 const Projects = () => {
@@ -21,9 +76,9 @@ const Projects = () => {
   return (
     <motion.section 
       className="projects"
-      initial={{ opacity: 0, y: 20 }} 
-      animate={{ opacity: 1, y: 0 }} 
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      initial={{ opacity: 0, scale: 0.8 }} 
+      animate={{ opacity: 1, scale: 1 }} 
+      transition={{ type: "spring", stiffness: 120, damping: 20 }}
     >
       <h2>Projects</h2>
       <motion.div 
@@ -42,6 +97,22 @@ const Projects = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
+            {project.video ? (
+              <video
+                src={project.video}
+                loop
+                autoPlay
+                muted
+                playsInline
+                className="project-image"
+              />
+            ) : (
+              <img
+                src={project.img}
+                alt={project.title}
+                className="project-image"
+              />
+            )}
             <h3>{project.title}</h3>
             <p>{project.description}</p>
           </motion.div>

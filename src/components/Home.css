@@ -3,6 +3,7 @@ body {
   /* background: linear-gradient(to right, #e4ecf3, #5e42c0); */
   /* background: linear-gradient(to right, #e4ecf3, #45cce1); */
   background: linear-gradient(to right, #e4ecf3, #b1a5e1);
+  /* background: linear-gradient(to left, #d3d3d3, #f0f0f0); */
 
   margin: 0;
   padding: 0;
@@ -15,7 +16,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 67vh;
+  min-height: 66vh;
   color: rgb(0, 0, 0);
   padding: 20px;
 }
@@ -135,3 +136,4 @@ body {
     height: 300px;
   }
 }
+

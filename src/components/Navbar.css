@@ -22,6 +22,7 @@
   display: inline-block;
   transition: all 0.3s ease;
   background: linear-gradient(to right, #e4ecf3, #c7c1e0);
+  border: 1px solid #ffcc00;
 }
 
 /* Nav Links */
@@ -44,7 +45,6 @@
 .nav-links a:hover {
   color: #5635e7;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  background-color: #dedada;
 }
 
 /* Hamburger Menu */
@@ -66,7 +66,7 @@
 .hamburger span {
   background: black;
   height: 4px;
-  width: 30px;
+  width: 33px;
   border-radius: 15px;
   transition: all 0.4s ease-in-out;
 }

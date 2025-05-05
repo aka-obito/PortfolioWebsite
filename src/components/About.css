@@ -18,6 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2vw;
   justify-content: center;
 }
 
@@ -67,7 +68,7 @@
   border-radius: 10px;
   backdrop-filter: blur(5px);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
-  padding: 15px;
+  padding: 30px;
   margin: 10px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -130,14 +131,15 @@
   width: 30%;
   padding: 15px;
   object-fit: cover;
+  background: #d3d3d3;
   border-radius: 10px;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .cert-image:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.01);
+  box-shadow: 0 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* ========== Badge Scroll Section ========== */
@@ -183,17 +185,18 @@
 
 .gallery-image {
   width: 30%;
-  padding: 15px;
+  padding: 20px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+  background: #1f2020;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .gallery-image:hover {
   transform: scale(1.1);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
-  background-color: #9ebcc5;
+  background-color: #1f2020;
 }
 
 /* ========== Recognition Section ========== */

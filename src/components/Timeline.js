@@ -86,7 +86,7 @@ const Timeline = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.4 }} // amount controls how much of the element should be visible
-            transition={{ duration: 0.8, delay: index * 0.2, type: "spring", stiffness: 50 }}
+            transition={{ type: "spring", stiffness: 100, damping: 10 }}
           >
             <div className="timeline-content">
               <img

@@ -3,6 +3,7 @@ import "./Home.css";
 import profilePic from "../assets/profile.png";
 import { ReactTyped } from "react-typed";
 import { motion } from "framer-motion";
+import Sparkle from "react-sparkle"; // Import Sparkle
 
 const Home = () => {
   return (
@@ -17,9 +18,9 @@ const Home = () => {
         <ReactTyped
           className="typed-text"
           strings={[
-            "A Passionate Developer",
+            "Web Developer",
             "AI-ML Enthusiast",
-            "A Problem Solver",
+            "Problem Solver",
           ]}
           typeSpeed={60}
           backSpeed={40}
@@ -34,12 +35,22 @@ const Home = () => {
         transition={{ duration: 1 }}
         whileHover={{ scale: 1.1, rotate: 5 }}
       >
+        {/* Sparkle only inside image section */}
+        <Sparkle
+          color="#000000" // Black sparkles
+          count={50}
+          minSize={3}
+          maxSize={7}
+          overflowPx={10}
+          fadeOutSpeed={70}
+          flicker={false}
+          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+        />
         <img
           src={profilePic}
           alt="Profile"
           className="profile-pic"
         />
-        <div className="sparkle"></div>
       </motion.div>
     </section>
   );
