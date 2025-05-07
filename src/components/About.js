@@ -95,17 +95,17 @@ const About = () => {
         <div className="recognition-list">
           {[
             {
-              img: p1,
-              text: [
-                "Secured 1st prize 🥇 in the Product to Project competition by E-CELL at MITAOE.",
-                "This milestone fueled my passion for innovation and project-based learning. 🚀"
-              ]
-            },
-            {
               img: p2,
               text: [
                 "Presented our LSTM-based research at AVINYA 2025 on National Science Day 📚.",
                 "Our paper made it to the top 5 🏆 among 52 finalists — an unforgettable moment. ⚡"
+              ]
+            },
+            {
+              img: p1,
+              text: [
+                "Secured 1st prize 🥇 in the Product to Project competition by E-CELL at MITAOE.",
+                "This milestone fueled my passion for innovation and project-based learning. 🚀"
               ]
             },
             {

@@ -67,9 +67,10 @@
   background: linear-gradient(to left,#dad7e5, #e4ecf3);;
   border-radius: 10px;
   backdrop-filter: blur(5px);
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3); */
   padding: 30px;
   margin: 10px;
+  border: 1px solid #d01515;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -194,7 +195,7 @@
 }
 
 .gallery-image:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
   background-color: #1f2020;
 }
@@ -203,10 +204,13 @@
 .recognition-list {
   display: flex;
   flex-direction: column;
+  align-items: center;      /* Centers items horizontally */
+  justify-content: center;  /* Optional: centers items vertically if there's enough height */
   gap: 30px;
-  margin-top: 30px;
-  width: 100%;
+  margin: 30px auto 0;      /* Centers the container horizontally and adds top margin */
+  width: 90%;
 }
+
 
 .recognition-item {
   display: flex;
@@ -224,8 +228,8 @@
 }
 
 .recognition-item img {
-  width: 35%;
-  height: 35%;
+  width: 40%;
+  height: 40%;
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -241,6 +245,7 @@
   margin: 10px;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
+  border: 2px solid #ffcc00;
 }
 
 .recognition-item p:hover {
