@@ -20,7 +20,7 @@ const timelineData = [
   {
     year: "2021",
     title: "Started My Journey",
-    description: "Began my coding journey by building small websites and learning Python.",
+    description: "Began my coding journey by building small websites and learning Python at MITAOE.",
     image: t1,
   },
   {

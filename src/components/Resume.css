@@ -1,8 +1,21 @@
 .resume h2{
-  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  margin-bottom: 3rem;
+  color: #1a202c;
   font-weight: bold;
+  letter-spacing: 1px;
   -webkit-text-stroke: 1px rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
+.resume h2:hover {
+  transform: scale(1.05);
+  color: #3d0cc4;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
 .resume {
   padding: 2rem;
   font-family: 'Segoe UI', sans-serif;
