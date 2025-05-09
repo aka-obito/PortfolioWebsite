@@ -15,7 +15,7 @@ const projects = [
   { 
     title: "Minor Project", 
     description: "Sign Language Recognition Model Using CNN ", 
-    githubLink: "https://github.com/aka-obito/VQAModel",
+    githubLink: "https://github.com/aka-obito/Minor_Project",
     video: pr1
   },
   { 
@@ -33,37 +33,37 @@ const projects = [
   { 
     title: "EchoBeats Music", 
     description: "Robust Music App for Music streaming And Chatting With Friends.", 
-    githubLink: "https://github.com/yourusername/object-detection",
+    githubLink: "https://spotify-clone-hvtx.onrender.com",
     video: pr4
   },
   { 
     title: "VQA Model", 
     description: "Deep Learning Approch for Visual Quetion Answering.", 
-    githubLink: "https://github.com/yourusername/stock-price-predictor",
+    githubLink: "https://github.com/aka-obito/VQAModel",
     video: pr5
   },
   {
     title: "Anti-Theft Alarm Monitoring System",
     description: "A full-stack e-commerce platform with payment integration.",
-    githubLink: "https://github.com/yourusername/ecommerce-website",
+    githubLink: "https://drive.google.com/file/d/1NGSHDJWzd970HdCDhmm7oIv4-r0qUXYh/view?usp=sharing",
     video: pr6
   },  
   { 
     title: "Online Personlised Learning Platform", 
     description: "A React.js personal portfolio with a dynamic project showcase.", 
-    githubLink: "https://github.com/yourusername/portfolio-website",
+    githubLink: "https://github.com/aka-obito/Online-personalized-learning",
     video: pr7
   },
   { 
     title: "AI Proctoring System", 
     description: "A web-based chat application using WebSockets and Node.js.", 
-    githubLink: "https://github.com/yourusername/real-time-chat-app",
+    githubLink: "https://github.com/aka-obito/AI_Proctoring",
     video: pr8
   },
   { 
     title: "Weather App", 
     description: "A web-based chat application using WebSockets and Node.js.", 
-    githubLink: "https://github.com/yourusername/real-time-chat-app",
+    githubLink: "https://github.com/aka-obito/Weatherapp",
     video: pr9
   }
 ];

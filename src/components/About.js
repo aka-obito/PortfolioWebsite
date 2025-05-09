@@ -25,6 +25,8 @@ import c4 from "../assets/c4.png";
 import c5 from "../assets/c5.png";
 import c6 from "../assets/c6.png";
 import c7 from "../assets/c7.png";
+import c8 from "../assets/c8.png";
+import c9 from "../assets/c9.jpg";
 
 import pdf1 from "../assets/pdf1.pdf";
 import pdf2 from "../assets/pdf2.pdf";
@@ -33,6 +35,8 @@ import pdf4 from "../assets/pdf4.pdf";
 import pdf5 from "../assets/pdf5.pdf";
 import pdf6 from "../assets/pdf6.pdf";
 import pdf7 from "../assets/pdf7.pdf";
+import pdf8 from "../assets/pdf8.pdf";
+import pdf9 from "../assets/pdf9.pdf";
 
 import "./About.css";
 
@@ -140,33 +144,34 @@ const About = () => {
         </div>
       </section>
 
-      <section className="section">
-        <h2>Certifications</h2>
-        <div class="badge-scroll-container">
-            <div class="badge-container">
-              <div className="badge-container">
-                {[
-                  { badge: c1, pdf: pdf1 },
-                  { badge: c2, pdf: pdf2 },
-                  { badge: c5, pdf: pdf5 },
-                  { badge: c3, pdf: pdf3 },
-                  { badge: c4, pdf: pdf4 },
-                  { badge: c6, pdf: pdf6 },
-                  { badge: c7, pdf: pdf7 },
-                ].map((item, index) => (
-                  <div className="badge-item" key={index}>
-                    <img
-                      src={item.badge}
-                      alt={`Badge ${index + 1}`}
-                      className="badge"
-                      onClick={() => window.open(item.pdf, "_blank")}
-                    />
-                  </div>
-                ))}
+    <section className="section">
+      <h2>Certifications</h2>
+      <div className="badge-scroll-container">
+        <div className="badge-container">
+          {[
+            { badge: c8, pdf: pdf8 },
+            { badge: c9, pdf: pdf9 },
+            { badge: c1, pdf: pdf1 },
+            { badge: c2, pdf: pdf2 },
+            { badge: c5, pdf: pdf5 },
+            { badge: c3, pdf: pdf3 },
+            { badge: c4, pdf: pdf4 },
+            { badge: c6, pdf: pdf6 },
+            { badge: c7, pdf: pdf7 },
+          ].map((item, index) => (
+            <div className="badge-item" key={index}>
+              <img
+                src={item.badge}
+                alt={`Badge ${index + 1}`}
+                className="badge"
+                onClick={() => window.open(item.pdf, "_blank")}
+              />
             </div>
-          </div>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
+
 
 
       <section className="section">
